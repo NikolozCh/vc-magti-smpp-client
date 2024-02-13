@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Compile JAVA project') {
             steps {
-                sh 'mvn compile'
+                sh 'mvn clean install'
             }
         }
     }
